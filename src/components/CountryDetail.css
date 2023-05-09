@@ -1,0 +1,62 @@
+.back {
+  margin: 50px 0;
+  height: 40px;
+  width: 160px;
+  background-color: #fff;
+  border: none;
+}
+
+.countryDetail {
+  display: flex;
+  gap: 40px;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.detailFlag {
+  max-width: 560px;
+  max-height: 485px;
+  border-radius: 5px;
+}
+
+.detailContent {
+  flex: 1;
+  display: grid;
+  grid-template-areas:
+    "country country"
+    "detail1 detail2"
+    "borders borders";
+}
+
+#country {
+  grid-area: country;
+}
+
+#detail1 {
+  grid-area: detail1;
+}
+
+#detail2 {
+  grid-area: detail2;
+}
+
+#borders {
+  grid-area: borders;
+  display: inline-flex;
+  align-items: center;
+}
+#borders span {
+  margin-top: 20px;
+  padding-right: 10px;
+}
+.borderButtons button {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
+  border-radius: 2px;
+  border: none;
+  min-width: 90px;
+  min-height: 28px;
+  margin-right: 10px;
+  margin-top: 20px;
+  color: #111517;
+}

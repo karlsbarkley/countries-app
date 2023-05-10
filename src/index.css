@@ -4,10 +4,30 @@ body {
   box-sizing: border-box;
   color: #111517;
   background-color: #f2f2f2;
-  padding-left: 80px;
-  padding-right: 80px;
 }
 
 span {
   font-weight: 600;
+}
+
+.app {
+  color: #111517;
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
+.app > *:not(.navbar) {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Dark mode styles */
+.app.dark-mode {
+  color: #fff;
+  background-color: #202c36;
+}
+
+.app.dark-mode .countryDetail {
+  height: 100vh;
+  align-items: flex-start;
 }

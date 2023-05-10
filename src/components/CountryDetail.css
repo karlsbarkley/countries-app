@@ -4,6 +4,24 @@
   width: 160px;
   background-color: #fff;
   border: none;
+  transition: all 0.3s ease-out;
+}
+
+.back:hover {
+  cursor: pointer;
+}
+
+.back:hover .fa-arrow-left {
+  transform: translateX(-5px);
+}
+
+.fa-arrow-left {
+  padding-right: 10px;
+}
+
+.app.dark-mode .back {
+  color: #fff;
+  background-color: #2b3844;
 }
 
 .countryDetail {
@@ -59,4 +77,9 @@
   margin-right: 10px;
   margin-top: 20px;
   color: #111517;
+}
+
+.app.dark-mode .borderButtons button {
+  background: #2b3844;
+  color: white;
 }

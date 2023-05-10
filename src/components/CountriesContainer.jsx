@@ -33,7 +33,9 @@ function CountriesContainer() {
         <SearchBar onSearch={handleSearch} />
         <RegionFilter onFilter={handleRegionFilter} />
       </div>
-      <CountryCardList data={filteredData} />
+      <div className="countriesContainer">
+        <CountryCardList data={filteredData} />
+      </div>
     </>
   );
 }

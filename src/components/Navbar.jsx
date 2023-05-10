@@ -1,10 +1,13 @@
+import React from "react";
 import "./Navbar.css";
-function Navbar() {
+
+function Navbar({ isDarkMode, toggleDarkMode }) {
   return (
     <nav className="Navbar">
       <h1>Where in the world?</h1>
-      <button>
-        <i className="fa-regular fa-moon">Dark Mode</i>
+      <button className="mode-switcher" onClick={toggleDarkMode}>
+        <i className={`fa-regular ${isDarkMode ? " fa-sun" : "fa-moon"}`}></i>
+        {isDarkMode ? "Light Mode" : "Dark Mode"}
       </button>
     </nav>
   );

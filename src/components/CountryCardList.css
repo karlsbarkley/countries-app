@@ -10,6 +10,10 @@
   transition: all 0.2s ease-in-out;
 }
 
+.app.dark-mode .cardContainer {
+  background: #2b3844;
+}
+
 .cardContainer:hover {
   cursor: pointer;
   transform: scale(1.05);
@@ -18,6 +22,16 @@
 .cardImg {
   width: 264px;
   height: 160px;
+  position: relative;
+}
+
+.cardImg img {
+  width: 264px;
+  height: 160px;
+  max-height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .flag {
@@ -44,10 +58,4 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
-}
-
-.countriesContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 75px;
 }

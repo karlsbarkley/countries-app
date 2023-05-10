@@ -14,3 +14,8 @@
 .RegionFilter:hover {
   cursor: pointer;
 }
+
+.app.dark-mode > .filters > .RegionFilter {
+  color: #fff;
+  background-color: #2b3844;
+}

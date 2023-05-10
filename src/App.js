@@ -1,13 +1,19 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
+import "./index.css";
 import CountriesContainer from "./components/CountriesContainer";
-import CountryDetail from "./components/CountryDetail";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className="App">
-      <Navbar />
+    <div className={`app ${isDarkMode ? "dark-mode" : ""}`}>
+      <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+
       <CountriesContainer />
     </div>
   );

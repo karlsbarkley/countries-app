@@ -18,10 +18,32 @@
 
 .SearchBarContainer input {
   width: 100%;
-  height: 100%;
+  height: 50px;
   border: none;
   font: inherit;
   font-size: 14px;
   text-indent: 5px;
   margin-right: 5px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 790px) {
+  .SearchBarContainer {
+    max-width: 100%;
+  }
+}
+
+.app.dark-mode > .filters > * {
+  color: #fff;
+  background-color: #2b3844;
+}
+
+.app.dark-mode > .filters > * > * {
+  color: #fff;
+  background-color: #2b3844;
 }
